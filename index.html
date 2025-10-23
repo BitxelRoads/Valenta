@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valenta Accounting Landing Page (Recreado con Tailwind CSS)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="public/output.css">
+</head>
+
+<body class="bg-white text-valenta-content font-sans">
+
+    <!-- Header (Logo) -->
+    <header class="py-5">
+        <div class="max-w-7xl mx-auto px-6">
+            <img src="https://valenta.io/wp-content/uploads/2025/04/newLogo.png" alt="Valenta Logo" class="w-48 md:w-64 h-auto">
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. Hero Section -->
+        <section class="bg-valenta-navy text-white py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="hero-content text-center lg:text-left">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">Asistentes Digitales con IA Para Contadores Que Necesitan Hacer Más Con Menos</h1>
+                    <p class="text-lg text-white/90 mb-8">Entre plazos inminentes, costos laborales en aumento y alta rotación de personal, los líderes contables están al límite. Los Asistentes Digitales personalizados de Valenta están aquí para cambiar eso.</p>
+                    <a href="#bottom-form-section" class="inline-block bg-valenta-orange text-white text-xl font-medium py-3 px-8 rounded-md shadow-lg hover:bg-black hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        Reserva tu Consulta Gratuita
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-1.webp" alt="Profesionales de contabilidad trabajando" class="rounded-2xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Video Section -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-8">Aprovecha al Máximo tu Mayor Gasto: Los Salarios</h2>
+                <div class="max-w-4xl mx-auto shadow-2xl rounded-2xl overflow-hidden mb-8">
+                    <video controls poster="https://valenta.io/wp-content/uploads/2025/07/Screenshot-2025-08-01-at-2.15.17-AM-scaled-1.webp" class="w-full aspect-video">
+                        <source src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Overview-Video.mp4" type="video/mp4">
+                        Tu navegador no soporta el tag de video.
+                    </video>
+                </div>
+                <div class="max-w-4xl mx-auto text-lg text-valenta-gray space-y-4">
+                    <p>Para la mayoría de los contadores, la mano de obra representa el 60-80% de los costos. Nuestros Asistentes Digitales no reemplazan a tu gente, sino que los apoyan asumiendo las tareas repetitivas, monótonas y propensas a errores.</p>
+                    <p>El resultado es que maximizas el valor de tu equipo y haces más cosas, sin aumentar la plantilla.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Challenges Section -->
+        <section class="bg-valenta-gray-light py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black">Principales Desafíos que Resolvemos para Contadores</h2>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="challenges-image text-center">
+                        <img src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-3.webp" alt="Robot IA con herramientas de contabilidad" class="max-w-sm w-full mx-auto">
+                    </div>
+                    <div class="challenges-list relative">
+                        <!-- Línea conectora de puntos (hecha con pseudo-elemento) -->
+                        <div class="absolute left-8 top-8 bottom-8 w-0.5 bg-repeat-y bg-[length:2px_8px]" style="background-image: linear-gradient(to bottom, #ff5400 0%, #ff5400 50%, transparent 50%, transparent 100%);"></div>
+                        
+                        <div class="relative flex items-start gap-6 mb-12">
+                            <div class="flex-shrink-0 w-16 h-16 rounded-full bg-valenta-teal flex items-center justify-center z-10">
+                                <img src="https://valenta.io/wp-content/uploads/2025/07/Section-3-Icon-1.webp" alt="Icono de retención de personal" class="w-9 h-9">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-valenta-content mb-2">Atraer y Retener Personal</h3>
+                                <p class="text-valenta-gray">Permite que tus contadores se centren en trabajos de alto valor en lugar de en la entrada de datos y la conciliación.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-start gap-6 mb-12">
+                            <div class="flex-shrink-0 w-16 h-16 rounded-full bg-valenta-teal-dark flex items-center justify-center z-10">
+                                <img src="https://valenta.io/wp-content/uploads/2025/07/Section-3-Icon-2.webp" alt="Icono de plazos" class="w-9 h-9">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-valenta-content mb-2">Gestionar Plazos Cíclicos</h3>
+                                <p class="text-valenta-gray">Los cierres de mes, trimestre y la temporada de impuestos llegan rápido. Los Asistentes Digitales ayudan a mantener los procesos en movimiento 24/7.</p>
+                            </div>
+                        </div>
+                        <div class="relative flex items-start gap-6">
+                             <div class="flex-shrink-0 w-16 h-16 rounded-full bg-valenta-teal-darker flex items-center justify-center z-10">
+                                <img src="https://valenta.io/wp-content/uploads/2025/07/Section-3-Icon-3.webp" alt="Icono de seguridad" class="w-9 h-9">
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-valenta-content mb-2">Evitar Riesgos de la Deslocalización</h3>
+                                <p class="text-valenta-gray">Muchas firmas desconfían del offshoring por la seguridad de los datos. La Automatización Inteligente ofrece una alternativa rentable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#bottom-form-section" class="inline-block bg-valenta-orange text-white text-xl font-medium py-3 px-8 rounded-md shadow-lg hover:bg-black hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        Reserva tu Consulta Gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. AI Explanation Section -->
+        <section class="py-16 md:py-24 bg-cover bg-center bg-no-repeat relative" style="background-image: url('https://valenta.io/wp-content/uploads/2025/08/Section-4-image-1.png');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Qué es la Automatización Inteligente con IA para Contadores?</h2>
+                <div class="space-y-6 text-lg text-white/90">
+                    <p>La Automatización Inteligente está cambiando las reglas del juego para los contadores, ayudándote a abordar tareas complejas, repetitivas y de gran volumen con la velocidad y precisión de un Asistente Digital.</p>
+                    <p>Mucho antes del auge de herramientas de IA como ChatGPT, la Automatización Inteligente ya impulsaba silenciosamente a grandes empresas. Según Gartner, es el sector de software empresarial de más rápido crecimiento, y por una buena razón.</p>
+                    <p>Las "Big 4" ya han adoptado este cambio, utilizando Asistentes Digitales para agilizar cientos de procesos, reduciendo los tiempos de entrega en más de un 80% y disminuyendo la dependencia de equipos offshore.</p>
+                    <p>Ahora, Valenta pone ese mismo poder al alcance de firmas contables de todos los tamaños.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Capabilities Section -->
+        <section class="py-16 md:py-24 text-center">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-8 leading-tight">¿Qué Puede Hacer Realmente un Asistente Digital?<br>Más de lo que Crees</h2>
+                
+                <div class="hidden lg:block">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-4-Updated.png" alt="Capacidades del Asistente Digital" class="mx-auto">
+                </div>
+                <div class="block lg:hidden">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-4-Mobile.png" alt="Capacidades del Asistente Digital en móvil" class="mx-auto">
+                </div>
+                
+                <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 max-w-3xl mx-auto text-left">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-4-Icon.webp" alt="Icono de bombilla" class="w-16 h-auto flex-shrink-0">
+                    <p class="text-lg text-valenta-content text-center md:text-left"><strong class="font-bold">¿Sabías que?</strong> El contador promedio en Australia/Nueva Zelanda implementará de 20 a 30 procesos de automatización a una fracción del costo del personal humano.</p>
+                </div>
+                
+                <div class="mt-12">
+                    <a href="#bottom-form-section" class="inline-block bg-valenta-orange text-white text-xl font-medium py-3 px-8 rounded-md shadow-lg hover:bg-black hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        Reserva tu Consulta Gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 6. Flip Cards Section -->
+        <section class="bg-valenta-gray-light py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black">Lo que Otros Contadores Han Logrado con los Asistentes Digitales de Valenta</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 perspective">
+                    
+                    <div class="group h-[400px] w-full">
+                        <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
+                                <h3 class="text-xl font-bold mb-4">Un Asistente Digital Potenció a un Contador Rural</h3>
+                                <div class="flex-grow flex items-center justify-center">
+                                    <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Equipo contable" class="w-full h-auto object-cover max-h-full max-w-[500px] mask-radial-at-center">
+                                </div>
+                            </div>
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
+                                <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
+                                    <li>1 Asistente Digital gestiona 4 flujos de trabajo automatizados.</li>
+                                    <li>El primer flujo cubrió el costo del asistente, reemplazando el trabajo de 1.2 empleados.</li>
+                                    <li>Los siguientes 3 flujos reemplazaron a 2.8 empleados adicionales sin costo extra.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] w-full">
+                        <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
+                                <h3 class="text-xl font-bold mb-4">Firma Nacional Ahorra 7 Roles con un Asistente</h3>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Oficina moderna" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
+
+                            </div>
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
+                                <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
+                                    <li>1 Asistente Digital operando en más de 15 oficinas.</li>
+                                    <li>1 flujo automatizado reemplazó la carga de 7 empleados a tiempo completo.</li>
+                                    <li>Se están desarrollando 2 flujos de trabajo adicionales.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="group h-[400px] w-full">
+                        <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
+                                <h3 class="text-xl font-bold mb-4">Firma de Sídney Automatiza 9 Flujos y Reemplaza 4 Roles</h3>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Skyline de Sídney" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
+                                
+                            </div>
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
+                                <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
+                                    <li>1 Asistente Digital ejecutando 9 flujos de trabajo automatizados.</li>
+                                    <li>Los primeros 2 flujos cubrieron con creces la tarifa del servicio.</li>
+                                    <li>El asistente ha reemplazado la carga de trabajo de 4 empleados.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] w-full">
+                         <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
+                                <h3 class="text-xl font-bold mb-4">Firma de Melbourne Automatiza 8 Flujos y Reemplaza 6 Roles</h3>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Skyline de Melbourne" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
+                                
+                            </div>
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
+                                <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
+                                    <li>1 Asistente Digital con 8 flujos en Impuestos, Admin y más.</li>
+                                    <li>Ha reemplazado la carga de trabajo de 6 empleados hasta la fecha.</li>
+                                    <li>Más ahorros en camino con flujos adicionales en desarrollo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NUEVA: Case Studies & Insights -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black tracking-wide">Casos de Estudio e Insights</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://valenta.io/wp-content/uploads/2024/09/Evolve-Case-Study.pdf-image-013.jpg" alt="Firma de contabilidad" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-valenta-content mb-3 h-20">El Soporte Experto de Valenta Permite a una Firma de Contabilidad Escalar...</h3>
+                            <p class="text-valenta-gray mb-6 flex-grow h-16">El fundador de Evolve había hecho recientemente la transición de su rol anterior para establecer su propia firma de contabilidad.</p>
+                            <div class="mt-auto text-center">
+                                <a href="https://valenta.io/case-study/valentas-expert-support/" target="_blank" class="inline-block bg-valenta-orange text-white text-lg font-medium py-3 px-8 rounded-md shadow-md hover:bg-black transition-colors duration-300">
+                                    LEER CASO DE ESTUDIO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://valenta.io/wp-content/uploads/2024/07/image_2024_07_24T09_43_25_085Z-1-1.jpg" alt="Automatización para CPA" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-valenta-content mb-3 h-20">Contabilidad Eficiente con Automatización Inteligente para Firmas de CPA</h3>
+                            <p class="text-valenta-gray mb-6 flex-grow h-16">El cliente es una firma de CPA en Greenville, SC. Se aseguran de que los clientes paguen la menor cantidad de impuestos legalmente...</p>
+                            <div class="mt-auto text-center">
+                                <a href="https://valenta.io/case-study/efficient-bookkeeping-with-rpa-for-cpa-firms/" target="_blank" class="inline-block bg-valenta-orange text-white text-lg font-medium py-3 px-8 rounded-md shadow-md hover:bg-black transition-colors duration-300">
+                                    LEER CASO DE ESTUDIO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://valenta.io/wp-content/uploads/2024/05/MicrosoftTeams-image-31-1.jpg" alt="Digitalización de operaciones" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-valenta-content mb-3 h-20">Accountable Inc. Escala Operaciones Contables con Digitalización Estratégica</h3>
+                            <p class="text-valenta-gray mb-6 flex-grow h-16">Identificación e Implementación de una Plataforma CRM (Implementación de Zoho One).</p>
+                            <div class="mt-auto text-center">
+                                <a href="https://valenta.io/case-study/case-study-digitization-of-operations/" target="_blank" class="inline-block bg-valenta-orange text-white text-lg font-medium py-3 px-8 rounded-md shadow-md hover:bg-black transition-colors duration-300">
+                                    LEER CASO DE ESTUDIO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NUEVA: Why Choose Valenta -->
+        <section class="py-16 md:py-24 bg-cover bg-center" style="background-image: url('https://valenta.io/wp-content/uploads/2025/07/Section-5-Image-Updated-2.png');">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black">Por Qué los Líderes Contables Eligen Valenta</h2>
+                </div>
+                
+                <!-- Layout para Escritorio -->
+                <div class="hidden lg:grid grid-cols-2 gap-16 items-center">
+                    <ul class="space-y-8">
+                        <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg">
+                                <strong class="block font-bold text-valenta-content">Entregado como Servicio</strong>
+                                <span class="text-valenta-gray">Sin necesidad de recursos de TI o inversión inicial (CAPEX).</span>
+                            </div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg">
+                                <strong class="block font-bold text-valenta-content">Hecho a Medida</strong>
+                                <span class="text-valenta-gray">Adaptado a tus herramientas, procesos y prioridades.</span>
+                            </div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg">
+                                <strong class="block font-bold text-valenta-content">ROI Rápido</strong>
+                                <span class="text-valenta-gray">Pasa del descubrimiento al despliegue en vivo en tan solo 30 días.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg">
+                                <strong class="block font-bold text-valenta-content">Sin Interrupciones</strong>
+                                <span class="text-valenta-gray">Asegura una transición fluida con fases de prueba exhaustivas.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg">
+                                <strong class="block font-bold text-valenta-content">Experiencia en la Industria</strong>
+                                <span class="text-valenta-gray">Valenta ha entregado más de 100 Asistentes Digitales a contadores en los últimos 24 meses.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- La imagen de la derecha está implícita en el fondo de la sección en este diseño -->
+                </div>
+                
+                <!-- Layout para Móvil -->
+                <div class="block lg:hidden">
+                     <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Image-Updated.webp" alt="Profesionales colaborando" class="rounded-2xl shadow-lg mx-auto mb-12 max-w-md w-full">
+                     <ul class="space-y-8 max-w-md mx-auto">
+                        <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg"><strong class="block font-bold text-valenta-content">Entregado como Servicio</strong><span class="text-valenta-gray">Sin necesidad de recursos de TI o CAPEX.</span></div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg"><strong class="block font-bold text-valenta-content">Hecho a Medida</strong><span class="text-valenta-gray">Adaptado a tus herramientas, procesos y prioridades.</span></div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg"><strong class="block font-bold text-valenta-content">ROI Rápido</strong><span class="text-valenta-gray">Implementación en tan solo 30 días.</span></div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg"><strong class="block font-bold text-valenta-content">Sin Interrupciones</strong><span class="text-valenta-gray">Transición fluida con pruebas exhaustivas.</span></div>
+                        </li>
+                         <li class="flex items-start gap-4">
+                            <img src="https://valenta.io/wp-content/uploads/2025/07/Section-5-Icon.webp" alt="Checkmark" class="w-7 h-7 mt-1 flex-shrink-0">
+                            <div class="text-lg"><strong class="block font-bold text-valenta-content">Experiencia en la Industria</strong><span class="text-valenta-gray">+100 Asistentes Digitales entregados en 24 meses.</span></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 7. Integrations Section -->
+        <section class="py-16 md:py-24 bg-cover bg-center text-white relative" style="background-image: url('https://valenta.io/wp-content/uploads/2025/07/Section-6.webp');">
+            <div class="absolute inset-0 bg-valenta-content/50"></div>
+            <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Se Integran Perfectamente con tus Sistemas Existentes</h2>
+                <p class="max-w-3xl mx-auto text-lg text-white/90 mb-12">No importa qué sistemas uses, personalizamos los Asistentes Digitales para que funcionen con tu flujo de trabajo actual, para que no tengas que aprender a manejar otra herramienta más.</p>
+                
+                <div id="logo-carousel" class="flex items-center justify-center gap-8 md:gap-16 flex-wrap">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-6-1-1.webp" alt="Xero Logo" class="h-12 md:h-16 w-auto transition-transform hover:scale-110">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-6-2-1.webp" alt="QuickBooks Logo" class="h-12 md:h-16 w-auto transition-transform hover:scale-110">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-6-3-1.webp" alt="NetSuite Logo" class="h-12 md:h-16 w-auto transition-transform hover:scale-110">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-6-4.webp" alt="Sage Logo" class="h-12 md:h-16 w-auto transition-transform hover:scale-110">
+                </div>
+                
+                <div class="mt-12">
+                     <a href="#bottom-form-section" class="inline-block bg-valenta-orange text-white text-xl font-medium py-3 px-8 rounded-md shadow-lg hover:bg-black hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                        Reserva tu Consulta Gratuita
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 8. Process Section -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-5xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black">Del Caos a la Claridad en tan solo 30 Días</h2>
+                </div>
+                <div class="space-y-12 md:space-y-0 md:border-t border-valenta-orange/50">
+                    
+                    <div class="md:grid md:grid-cols-12 md:gap-8 items-center py-8">
+                        <div class="md:col-span-2 text-center"><div class="text-7xl font-bold text-valenta-teal opacity-50 mb-4 md:mb-0">01</div></div>
+                        <div class="md:col-span-4 text-center"><img src="https://valenta.io/wp-content/uploads/2025/07/Section-7-01.webp" alt="Evaluar flujos de trabajo" class="max-w-xs mx-auto"></div>
+                        <div class="md:col-span-6 mt-4 md:mt-0 text-center md:text-left"><h3 class="text-2xl font-semibold text-valenta-content">Evaluamos tus flujos de trabajo actuales.</h3></div>
+                    </div>
+                    
+                    <div class="border-t border-valenta-orange/50"></div>
+
+                    <div class="md:grid md:grid-cols-12 md:gap-8 items-center py-8">
+                        <div class="md:col-span-2 text-center"><div class="text-7xl font-bold text-valenta-teal opacity-50 mb-4 md:mb-0">02</div></div>
+                        <div class="md:col-span-4 text-center"><img src="https://valenta.io/wp-content/uploads/2025/07/Section-7-02.webp" alt="Construir y desplegar" class="max-w-xs mx-auto"></div>
+                        <div class="md:col-span-6 mt-4 md:mt-0 text-center md:text-left"><h3 class="text-2xl font-semibold text-valenta-content">Construimos y desplegamos Asistentes Digitales a medida.</h3></div>
+                    </div>
+
+                    <div class="border-t border-valenta-orange/50"></div>
+                    
+                    <div class="md:grid md:grid-cols-12 md:gap-8 items-center py-8">
+                        <div class="md:col-span-2 text-center"><div class="text-7xl font-bold text-valenta-teal opacity-50 mb-4 md:mb-0">03</div></div>
+                        <div class="md:col-span-4 text-center"><img src="https://valenta.io/wp-content/uploads/2025/07/Section-7-03.webp" alt="Ver ROI" class="max-w-xs mx-auto"></div>
+                        <div class="md:col-span-6 mt-4 md:mt-0 text-center md:text-left"><h3 class="text-2xl font-semibold text-valenta-content">Empiezas a ver el ROI en cuestión de semanas.</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Final CTA -->
+        <section class="bg-valenta-teal py-16 text-center text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para Transformar tus Operaciones Contables?</h2>
+                 <a href="#bottom-form-section" class="inline-block bg-valenta-orange text-white text-xl font-medium py-3 px-8 rounded-md shadow-lg hover:bg-black hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    Reserva tu Consulta Gratuita
+                </a>
+            </div>
+        </section>
+        
+        <!-- 10. Final Form Section -->
+        <section id="bottom-form-section" class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black">Consigue un Asistente Digital para tu Equipo</h2>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8 text-center lg:text-left">
+                        <h3 class="text-2xl font-semibold text-valenta-content leading-snug">¿Listo para añadir un Asistente Digital personalizado y ver el ROI en semanas?</h3>
+                        <img src="https://valenta.io/wp-content/uploads/2025/07/Form-Beside-Image-2.webp" alt="Automatización con IA" class="rounded-2xl shadow-lg mx-auto lg:mx-0 max-w-md w-full">
+                        <h3 class="text-2xl font-semibold text-valenta-content leading-snug">Con cientos de Socios Gerentes de Valenta en todo el mundo, puedes encontrar a alguien local para guiarte en cada paso.</h3>
+                        <h3 class="text-2xl font-semibold text-valenta-content leading-snug">Reserva tu consulta gratuita hoy.</h3>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8">
+                        <p class="text-center mb-4">Rellena el formulario para conectar con tu experto Valenta más cercano.</p>
+                        <div class="bg-gray-100 rounded-lg min-h-[600px] flex items-center justify-center">
+                           <iframe src="https://share-eu1.hsforms.com/2nwwG-2YMS7iqaq5TZx0nag2f1vq6?embed=true" width="100%" height="710" style="border:none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "valenta-tailwind-v3",
+  "version": "1.0.0",
+  "description": "Proyecto Tailwind configurado correctamente para Windows y pnpm",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "pnpm exec tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "watch:css": "pnpm exec tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "dev": "pnpm run watch:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
+}
