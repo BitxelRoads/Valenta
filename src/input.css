@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS para el efecto de las Flip Cards */
+.group:hover .group-hover\:rotate-y-180 {
+    transform: rotateY(180deg);
+}
+.preserve-3d {
+    transform-style: preserve-3d;
+}
+.perspective {
+    perspective: 1000px;
+}
+.backface-hidden {
+    backface-visibility: hidden;
+}
+/* Rotación en el eje Y */
+.rotate-y-180 {
+    transform: rotateY(180deg);
+}

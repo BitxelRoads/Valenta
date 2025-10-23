@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valenta Accounting Landing Page (Recreado con Tailwind CSS)</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="public/output.css">
+    
+    <style>
+        /* CSS para el efecto de las Flip Cards */
+        .group:hover .group-hover\:rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+        .perspective {
+            perspective: 1000px;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        /* Rotación en el eje Y */
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 
 <body class="bg-white text-valenta-content font-sans">
@@ -160,7 +180,7 @@
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Un Asistente Digital Potenció a un Contador Rural</h3>
                                 <div class="flex-grow flex items-center justify-center">
-                                    <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Equipo contable" class="w-full h-auto object-cover max-h-full max-w-[500px] mask-radial-at-center">
+                                    <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Equipo contable" class="w-full h-auto object-cover max-h-full max-w-[500px]">
                                 </div>
                             </div>
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
@@ -177,8 +197,7 @@
                         <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma Nacional Ahorra 7 Roles con un Asistente</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Oficina moderna" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
-
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Oficina moderna" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
@@ -194,8 +213,7 @@
                         <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma de Sídney Automatiza 9 Flujos y Reemplaza 4 Roles</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Skyline de Sídney" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
-                                
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Skyline de Sídney" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
@@ -211,8 +229,7 @@
                          <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma de Melbourne Automatiza 8 Flujos y Reemplaza 6 Roles</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Skyline de Melbourne" class="w-full h-auto object-cover max-h-full max-w-[400px]"></div>
-                                
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Skyline de Melbourne" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
