@@ -3,34 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valenta Accounting Landing Page (Recreado con Tailwind CSS)</title>
-
-    <!-- Google Fonts -->
+    <title>Valenta Accounting Landing Page</title>
+    <link rel="icon" href="facivon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="public/output.css">
     
-    <style>
-        /* CSS para el efecto de las Flip Cards */
-        .group:hover .group-hover\:rotate-y-180 {
-            transform: rotateY(180deg);
-        }
-        .preserve-3d {
-            transform-style: preserve-3d;
-        }
-        .perspective {
-            perspective: 1000px;
-        }
-        .backface-hidden {
-            backface-visibility: hidden;
-        }
-        /* Rotación en el eje Y */
-        .rotate-y-180 {
-            transform: rotateY(180deg);
-        }
-    </style>
 </head>
 
 <body class="bg-white text-valenta-content font-sans">
@@ -66,7 +45,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-black mb-8">Aprovecha al Máximo tu Mayor Gasto: Los Salarios</h2>
                 <div class="max-w-4xl mx-auto shadow-2xl rounded-2xl overflow-hidden mb-8">
                     <video controls poster="https://valenta.io/wp-content/uploads/2025/07/Screenshot-2025-08-01-at-2.15.17-AM-scaled-1.webp" class="w-full aspect-video">
-                        <source src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Overview-Video.mp4" type="video/mp4">
+                        <source src="/public/assets/section_.mp4" type="video/mp4">
                         Tu navegador no soporta el tag de video.
                     </video>
                 </div>
@@ -129,8 +108,12 @@
         </section>
 
         <!-- 4. AI Explanation Section -->
-        <section class="py-16 md:py-24 bg-cover bg-center bg-no-repeat relative" style="background-image: url('https://valenta.io/wp-content/uploads/2025/08/Section-4-image-1.png');">
-            <div class="absolute inset-0 bg-black/70"></div>
+        <section class="py-16 md:py-24 relative overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+                <source src="public/assets/section_.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
             <div class="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Qué es la Automatización Inteligente con IA para Contadores?</h2>
                 <div class="space-y-6 text-lg text-white/90">
@@ -180,7 +163,7 @@
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Un Asistente Digital Potenció a un Contador Rural</h3>
                                 <div class="flex-grow flex items-center justify-center">
-                                    <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Equipo contable" class="w-full h-auto object-cover max-h-full max-w-[500px]">
+                                    <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Equipo contable" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl">
                                 </div>
                             </div>
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
@@ -197,7 +180,7 @@
                         <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma Nacional Ahorra 7 Roles con un Asistente</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Oficina moderna" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Oficina moderna" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
@@ -213,7 +196,7 @@
                         <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma de Sídney Automatiza 9 Flujos y Reemplaza 4 Roles</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Skyline de Sídney" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Skyline de Sídney" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
@@ -229,7 +212,7 @@
                          <div class="relative w-full h-full preserve-3d group-hover:rotate-y-180 duration-500">
                             <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center text-center">
                                 <h3 class="text-xl font-bold mb-4">Firma de Melbourne Automatiza 8 Flujos y Reemplaza 6 Roles</h3>
-                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Skyline de Melbourne" class="w-full h-auto object-cover max-h-full max-w-[500px]"></div>
+                                <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Skyline de Melbourne" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
                              <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
                                 <ul class="list-disc list-inside space-y-3 text-left text-sm md:text-base">
@@ -385,10 +368,14 @@
 
 
         <!-- 7. Integrations Section -->
-        <section class="py-16 md:py-24 bg-cover bg-center text-white relative" style="background-image: url('https://valenta.io/wp-content/uploads/2025/07/Section-6.webp');">
+        <section class="py-16 md:py-24 relative overflow-hidden">
+            <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+                <source src="public/assets/section_2_.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
             <div class="absolute inset-0 bg-valenta-content/50"></div>
             <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Se Integran Perfectamente con tus Sistemas Existentes</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Se Integran Perfectamente con tus Sistemas Existentes</h2>
                 <p class="max-w-3xl mx-auto text-lg text-white/90 mb-12">No importa qué sistemas uses, personalizamos los Asistentes Digitales para que funcionen con tu flujo de trabajo actual, para que no tengas que aprender a manejar otra herramienta más.</p>
                 
                 <div id="logo-carousel" class="flex items-center justify-center gap-8 md:gap-16 flex-wrap">
