@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -461,7 +461,7 @@
                     <div class="space-y-8 text-center lg:text-left">
                         <h3 class="text-2xl font-semibold text-valenta-content leading-snug" data-key="final-form-subtitle-1">¿Listo para añadir un Asistente Digital personalizado y ver el ROI en semanas?</h3>
                         <img src="https://valenta.io/wp-content/uploads/2025/07/Form-Beside-Image-2.webp" alt="Automatización con IA" class="rounded-2xl shadow-lg mx-auto lg:mx-0 max-w-md w-full">
-                        <h3 class="text-2xl font-semibold text-valenta-content leading-snug" data-key="final-form-subtitle-2">Con cientos de Socios Gerentes de Valenta en todo el mundo, puedes encontrar a alguien local para guiarte en cada paso.</h3>
+                        <h3 class="text-2xl font-semibold text-valenta-content leading-snug" data-key="final-form-subtitle-2">Con cientos de Valenta Managing Partners en todo el mundo, puedes encontrar a alguien local para guiarte en cada paso.</h3>
                         <h3 class="text-2xl font-semibold text-valenta-content leading-snug" data-key="final-form-subtitle-3">Reserva tu consulta gratuita hoy.</h3>
                     </div>
                     <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8">
@@ -477,137 +477,225 @@
     </main>
 </body>
 <script>
-    const languageButton = document.getElementById('language-button');
-    const languageDropdown = document.getElementById('language-dropdown');
-    const selectedLanguageSpan = document.getElementById('selected-language');
-    const htmlTag = document.querySelector('html');
+    document.addEventListener('DOMContentLoaded', () => {
+        const languageButton = document.getElementById('language-button');
+        const languageDropdown = document.getElementById('language-dropdown');
+        const selectedLanguageSpan = document.getElementById('selected-language');
+        const htmlTag = document.querySelector('html');
 
-    const translations = {
-        "es": {
-            "hero-title": "Asistentes Digitales con IA Para Contadores Que Necesitan Hacer Más Con Menos",
-            "hero-description": "Entre plazos inminentes, costos laborales en aumento y alta rotación de personal, los líderes contables están al límite. Los Asistentes Digitales personalizados de Valenta están aquí para cambiar eso.",
-            "hero-cta": "Reserva tu Consulta Gratuita"
-        },
-        "en": {
-            "hero-title": "AI Digital Assistants for Accountants Who Need to Do More With Less",
-            "hero-description": "With looming deadlines, rising labor costs, and high staff turnover, accounting leaders are stretched thin. Valenta's custom Digital Assistants are here to change that.",
-            "hero-cta": "Book Your Free Consultation",
-            "video-title": "Maximize Your Biggest Expense: Salaries",
-            "video-unsupported": "Your browser does not support the video tag.",
-            "video-description-1": "For most accountants, labor accounts for 60-80% of costs. Our Digital Assistants don't replace your people, but support them by taking on repetitive, monotonous, and error-prone tasks.",
-            "video-description-2": "The result is that you maximize the value of your team and get more done, without increasing headcount.",
-            "challenges-title": "Key Challenges We Solve for Accountants",
-            "challenge-1-title": "Attracting & Retaining Staff",
-            "challenge-1-description": "Enable your accountants to focus on high-value work instead of data entry and reconciliation.",
-            "challenge-2-title": "Managing Cyclical Deadlines",
-            "challenge-2-description": "Month-end, quarter-end, and tax season come fast. Digital Assistants help keep processes moving 24/7.",
-            "challenge-3-title": "Avoiding Offshoring Risks",
-            "challenge-3-description": "Many firms are wary of offshoring due to data security concerns. Intelligent Automation offers a cost-effective alternative.",
-            "challenges-cta": "Book Your Free Consultation",
-            "ai-explanation-title": "What is Intelligent Automation with AI for Accountants?",
-            "ai-explanation-p1": "Intelligent Automation is changing the game for accountants, helping you tackle complex, repetitive, and high-volume tasks with the speed and accuracy of a Digital Assistant.",
-            "ai-explanation-p2": "Long before the rise of AI tools like ChatGPT, Intelligent Automation was quietly powering large enterprises. According to Gartner, it's the fastest-growing enterprise software sector—and for good reason.",
-            "ai-explanation-p3": "The \"Big 4\" have already embraced this shift, using Digital Assistants to streamline hundreds of processes, cutting delivery times by over 80% and reducing reliance on offshore teams.",
-            "ai-explanation-p4": "Now, Valenta brings that same power within reach of accounting firms of all sizes.",
-            "capabilities-title": "What Can a Digital Assistant Really Do?<br>More Than You Think",
-            "capabilities-did-you-know": "The average accountant in Australia/New Zealand will implement 20-30 automation processes at a fraction of the cost of human staff.",
-            "capabilities-did-you-know-strong": "Did you know?",
-            "capabilities-cta": "Book Your Free Consultation",
-            "flip-cards-title": "What Other Accountants Have Achieved with Valenta's Digital Assistants",
-            "flip-card-1-title": "A Digital Assistant Empowered a Rural Accountant",
-            "flip-card-1-item-1": "1 Digital Assistant manages 4 automated workflows.",
-            "flip-card-1-item-2": "The first flow covered the assistant's cost, replacing the work of 1.2 employees.",
-            "flip-card-1-item-3": "The next 3 flows replaced an additional 2.8 employees without extra cost.",
-            "flip-card-2-title": "National Firm Saves 7 Roles with a Single Assistant",
-            "flip-card-2-item-1": "1 Digital Assistant operating in more than 15 offices.",
-            "flip-card-2-item-2": "1 automated flow replaced the workload of 7 full-time employees.",
-            "flip-card-2-item-3": "2 additional workflows are under development.",
-            "flip-card-3-title": "Sydney Firm Automates 9 Workflows and Replaces 4 Roles",
-            "flip-card-3-item-1": "1 Digital Assistant executing 9 automated workflows.",
-            "flip-card-3-item-2": "The first 2 flows more than covered the service fee.",
-            "flip-card-3-item-3": "The assistant has replaced the workload of 4 employees.",
-            "flip-card-4-title": "Melbourne Firm Automates 8 Workflows and Replaces 6 Roles",
-            "flip-card-4-item-1": "1 Digital Assistant with 8 workflows in Taxes, Admin & more.",
-            "flip-card-4-item-2": "Has replaced the workload of 6 employees to date.",
-            "flip-card-4-item-3": "More savings on the way with additional workflows under development.",
-            "case-studies-title": "Case Studies & Insights",
-            "case-study-1-title": "Valenta's Expert Support Allows an Accounting Firm to Scale...",
-            "case-study-1-description": "The founder of Evolve had recently transitioned from his previous role to establish his own accounting firm.",
-            "case-study-read-more": "READ CASE STUDY",
-            "case-study-2-title": "Efficient Bookkeeping with Intelligent Automation for CPA Firms",
-            "case-study-2-description": "The client is a CPA firm in Greenville, SC. They ensure clients pay the least amount of taxes legally...",
-            "case-study-3-title": "Accountable Inc. Scales Accounting Operations with Strategic Digitization",
-            "case-study-3-description": "Identification and Implementation of a CRM Platform (Zoho One Implementation).",
-            "why-choose-title": "Why Accounting Leaders Choose Valenta",
-            "why-choose-1-strong": "Delivered as a Service",
-            "why-choose-1-span": "No IT resources or upfront investment (CAPEX) needed.",
-            "why-choose-2-strong": "Tailor-Made",
-            "why-choose-2-span": "Adapted to your tools, processes, and priorities.",
-            "why-choose-3-strong": "Fast ROI",
-            "why-choose-3-span": "Go from discovery to live deployment in as little as 30 days.",
-            "why-choose-4-strong": "Seamless Transitions",
-            "why-choose-4-span": "Ensure a smooth transition with thorough testing phases.",
-            "why-choose-5-strong": "Industry Expertise",
-            "why-choose-5-span": "Valenta has delivered over 100 Digital Assistants to accountants in the last 24 months.",
-            "why-choose-1-strong-mobile": "Delivered as a Service",
-            "why-choose-1-span-mobile": "No IT resources or CAPEX needed.",
-            "why-choose-2-strong-mobile": "Tailor-Made",
-            "why-choose-2-span-mobile": "Adapted to your tools, processes, and priorities.",
-            "why-choose-3-strong-mobile": "Fast ROI",
-            "why-choose-3-span-mobile": "Implementation in as little as 30 days.",
-            "why-choose-4-strong-mobile": "Seamless Transitions",
-            "why-choose-4-span-mobile": "Smooth transition with thorough testing.",
-            "why-choose-5-strong-mobile": "Industry Expertise",
-            "why-choose-5-span-mobile": "Over 100 Digital Assistants delivered in 24 months.",
-            "integrations-title": "Seamlessly Integrates with Your Existing Systems",
-            "integrations-description": "No matter what systems you use, we customize Digital Assistants to work with your current workflow, so you don't have to learn another tool.",
-            "integrations-cta": "Book Your Free Consultation",
-            "process-title": "From Chaos to Clarity in Just 30 Days",
-            "process-step-1": "We evaluate your current workflows.",
-            "process-step-2": "We build and deploy custom Digital Assistants.",
-            "process-step-3": "You start seeing ROI in a matter of weeks.",
-            "final-cta-title": "Ready to Transform Your Accounting Operations?",
-            "final-cta-button": "Book Your Free Consultation",
-            "final-form-title": "Get a Digital Assistant for Your Team",
-            "final-form-subtitle-1": "Ready to add a custom Digital Assistant and see ROI in weeks?",
-            "final-form-subtitle-2": "With hundreds of Valenta Managing Partners worldwide, you can find someone local to guide you every step of the way.",
-            "final-form-subtitle-3": "Book your free consultation today.",
-            "final-form-description": "Fill out the form to connect with your nearest Valenta expert."
+        const translations = {
+            "es": {
+                "hero-title": "Asistentes Digitales con IA Para Contadores Que Necesitan Hacer Más Con Menos",
+                "hero-description": "Entre plazos inminentes, costos laborales en aumento y alta rotación de personal, los líderes contables están al límite. Los Asistentes Digitales personalizados de Valenta están aquí para cambiar eso.",
+                "hero-cta": "Reserva tu Consulta Gratuita",
+                "video-title": "Aprovecha al Máximo tu Mayor Gasto: Los Salarios",
+                "video-unsupported": "Tu navegador no soporta el tag de video.",
+                "video-description-1": "Para la mayoría de los contadores, la mano de obra representa el 60-80% de los costos. Nuestros Asistentes Digitales no reemplazan a tu gente, sino que los apoyan asumiendo las tareas repetitivas, monótonas y propensas a errores.",
+                "video-description-2": "El resultado es que maximizas el valor de tu equipo y haces más cosas, sin aumentar la plantilla.",
+                "challenges-title": "Principales Desafíos que Resolvemos para Contadores",
+                "challenge-1-title": "Atraer y Retener Personal",
+                "challenge-1-description": "Permite que tus contadores se centren en trabajos de alto valor en lugar de en la entrada de datos y la conciliación.",
+                "challenge-2-title": "Gestionar Plazos Cíclicos",
+                "challenge-2-description": "Los cierres de mes, trimestre y la temporada de impuestos llegan rápido. Los Asistentes Digitales ayudan a mantener los procesos en movimiento 24/7.",
+                "challenge-3-title": "Evitar Riesgos de la Deslocalización",
+                "challenge-3-description": "Muchas firmas desconfían del offshoring por la seguridad de los datos. La Automatización Inteligente ofrece una alternativa rentable.",
+                "challenges-cta": "Reserva tu Consulta Gratuita",
+                "ai-explanation-title": "¿Qué es la Automatización Inteligente con IA para Contadores?",
+                "ai-explanation-p1": "La Automatización Inteligente está cambiando las reglas del juego para los contadores, ayudándote a abordar tareas complejas, repetitivas y de gran volumen con la velocidad y precisión de un Asistente Digital.",
+                "ai-explanation-p2": "Mucho antes del auge de herramientas de IA como ChatGPT, la Automatización Inteligente ya impulsaba silenciosamente a grandes empresas. Según Gartner, es el sector de software empresarial de más rápido crecimiento, y por una buena razón.",
+                "ai-explanation-p3": "Las \"Big 4\" ya han adoptado este cambio, utilizando Asistentes Digitales para agilizar cientos de procesos, reduciendo los tiempos de entrega en más de un 80% y disminuyendo la dependencia de equipos offshore.",
+                "ai-explanation-p4": "Ahora, Valenta pone ese mismo poder al alcance de firmas contables de todos los tamaños.",
+                "capabilities-title": "¿Qué Puede Hacer Realmente un Asistente Digital?<br>Más de lo que Crees",
+                "capabilities-did-you-know": "El contador promedio en Australia/Nueva Zelanda implementará de 20 a 30 procesos de automatización a una fracción del costo del personal humano.",
+                "capabilities-did-you-know-strong": "¿Sabías que?",
+                "capabilities-cta": "Reserva tu Consulta Gratuita",
+                "flip-cards-title": "Lo que Otros Contadores Han Logrado con los Asistentes Digitales de Valenta",
+                "flip-card-1-title": "Un Asistente Digital Potenció a un Contador Rural",
+                "flip-card-1-item-1": "1 Asistente Digital gestiona 4 flujos de trabajo automatizados.",
+                "flip-card-1-item-2": "El primer flujo cubrió el costo del asistente, reemplazando el trabajo de 1.2 empleados.",
+                "flip-card-1-item-3": "Los siguientes 3 flujos reemplazaron a 2.8 empleados adicionales sin costo extra.",
+                "flip-card-2-title": "Firma Nacional Ahorra 7 Roles con un Asistente",
+                "flip-card-2-item-1": "1 Asistente Digital operando en más de 15 oficinas.",
+                "flip-card-2-item-2": "1 flujo automatizado reemplazó la carga de 7 empleados a tiempo completo.",
+                "flip-card-2-item-3": "Se están desarrollando 2 flujos de trabajo adicionales.",
+                "flip-card-3-title": "Firma de Sídney Automatiza 9 Flujos y Reemplaza 4 Roles",
+                "flip-card-3-item-1": "1 Asistente Digital ejecutando 9 flujos de trabajo automatizados.",
+                "flip-card-3-item-2": "Los primeros 2 flujos cubrieron con creces la tarifa del servicio.",
+                "flip-card-3-item-3": "El asistente ha reemplazado la carga de trabajo de 4 empleados.",
+                "flip-card-4-title": "Firma de Melbourne Automatiza 8 Flujos y Reemplaza 6 Roles",
+                "flip-card-4-item-1": "1 Asistente Digital con 8 flujos en Impuestos, Admin y más.",
+                "flip-card-4-item-2": "Ha reemplazado la carga de trabajo de 6 empleados hasta la fecha.",
+                "flip-card-4-item-3": "Más ahorros en camino con flujos adicionales en desarrollo.",
+                "case-studies-title": "Casos de Estudio e Insights",
+                "case-study-1-title": "El Soporte Experto de Valenta Permite a una Firma de Contabilidad Escalar...",
+                "case-study-1-description": "El fundador de Evolve había hecho recientemente la transición de su rol anterior para establecer su propia firma de contabilidad.",
+                "case-study-read-more": "LEER CASO DE ESTUDIO",
+                "case-study-2-title": "Contabilidad Eficiente con Automatización Inteligente para Firmas de CPA",
+                "case-study-2-description": "El cliente es una firma de CPA en Greenville, SC. Se aseguran de que los clientes paguen la menor cantidad de impuestos legalmente...",
+                "case-study-3-title": "Accountable Inc. Escala Operaciones Contables con Digitalización Estratégica",
+                "case-study-3-description": "Identificación e Implementación de una Plataforma CRM (Implementación de Zoho One).",
+                "why-choose-title": "Por Qué los Líderes Contables Eligen Valenta",
+                "why-choose-1-strong": "Entregado como Servicio",
+                "why-choose-1-span": "Sin necesidad de recursos de TI o inversión inicial (CAPEX).",
+                "why-choose-2-strong": "Hecho a Medida",
+                "why-choose-2-span": "Adaptado a tus herramientas, procesos y prioridades.",
+                "why-choose-3-strong": "ROI Rápido",
+                "why-choose-3-span": "Pasa del descubrimiento al despliegue en vivo en tan solo 30 días.",
+                "why-choose-4-strong": "Sin Interrupciones",
+                "why-choose-4-span": "Asegura una transición fluida con fases de prueba exhaustivas.",
+                "why-choose-5-strong": "Experiencia en la Industria",
+                "why-choose-5-span": "Valenta ha entregado más de 100 Asistentes Digitales a contadores en los últimos 24 meses.",
+                "why-choose-1-strong-mobile": "Entregado como Servicio",
+                "why-choose-1-span-mobile": "Sin necesidad de recursos de TI o CAPEX.",
+                "why-choose-2-strong-mobile": "Hecho a Medida",
+                "why-choose-2-span-mobile": "Adaptado a tus herramientas, procesos y prioridades.",
+                "why-choose-3-strong-mobile": "ROI Rápido",
+                "why-choose-3-span-mobile": "Implementación en tan solo 30 días.",
+                "why-choose-4-strong-mobile": "Sin Interrupciones",
+                "why-choose-4-span-mobile": "Transición fluida con pruebas exhaustivas.",
+                "why-choose-5-strong-mobile": "Experiencia en la Industria",
+                "why-choose-5-span-mobile": "+100 Asistentes Digitales entregados en 24 meses.",
+                "integrations-title": "Se Integran Perfectamente con tus Sistemas Existentes",
+                "integrations-description": "No importa qué sistemas uses, personalizamos los Asistentes Digitales para que funcionen con tu flujo de trabajo actual, para que no tengas que aprender a manejar otra herramienta más.",
+                "integrations-cta": "Reserva tu Consulta Gratuita",
+                "process-title": "Del Caos a la Claridad en tan solo 30 Días",
+                "process-step-1": "Evaluamos tus flujos de trabajo actuales.",
+                "process-step-2": "Construimos y desplegamos Asistentes Digitales a medida.",
+                "process-step-3": "Empiezas a ver el ROI en cuestión de semanas.",
+                "final-cta-title": "¿Listo para Transformar tus Operaciones Contables?",
+                "final-cta-button": "Reserva tu Consulta Gratuita",
+                "final-form-title": "Consigue un Asistente Digital para tu Equipo",
+                "final-form-subtitle-1": "¿Listo para añadir un Asistente Digital personalizado y ver el ROI en semanas?",
+                "final-form-subtitle-2": "Con cientos de Valenta Managing Partners en todo el mundo, puedes encontrar a alguien local para guiarte en cada paso.",
+                "final-form-subtitle-3": "Reserva tu consulta gratuita hoy.",
+                "final-form-description": "Rellena el formulario para conectar con tu experto Valenta más cercano."
+            },
+            "en": {
+                "hero-title": "AI Digital Assistants for Accountants Who Need to Do More With Less",
+                "hero-description": "With looming deadlines, rising labor costs, and high staff turnover, accounting leaders are stretched thin. Valenta's custom Digital Assistants are here to change that.",
+                "hero-cta": "Book Your Free Consultation",
+                "video-title": "Maximize Your Biggest Expense: Salaries",
+                "video-unsupported": "Your browser does not support the video tag.",
+                "video-description-1": "For most accountants, labor accounts for 60-80% of costs. Our Digital Assistants don't replace your people, but support them by taking on repetitive, monotonous, and error-prone tasks.",
+                "video-description-2": "The result is that you maximize the value of your team and get more done, without increasing headcount.",
+                "challenges-title": "Key Challenges We Solve for Accountants",
+                "challenge-1-title": "Attracting & Retaining Staff",
+                "challenge-1-description": "Enable your accountants to focus on high-value work instead of data entry and reconciliation.",
+                "challenge-2-title": "Managing Cyclical Deadlines",
+                "challenge-2-description": "Month-end, quarter-end, and tax season come fast. Digital Assistants help keep processes moving 24/7.",
+                "challenge-3-title": "Avoiding Offshoring Risks",
+                "challenge-3-description": "Many firms are wary of offshoring due to data security concerns. Intelligent Automation offers a cost-effective alternative.",
+                "challenges-cta": "Book Your Free Consultation",
+                "ai-explanation-title": "What is Intelligent Automation with AI for Accountants?",
+                "ai-explanation-p1": "Intelligent Automation is changing the game for accountants, helping you tackle complex, repetitive, and high-volume tasks with the speed and accuracy of a Digital Assistant.",
+                "ai-explanation-p2": "Long before the rise of AI tools like ChatGPT, Intelligent Automation was quietly powering large enterprises. According to Gartner, it's the fastest-growing enterprise software sector—and for good reason.",
+                "ai-explanation-p3": "The \"Big 4\" have already embraced this shift, using Digital Assistants to streamline hundreds of processes, cutting delivery times by over 80% and reducing reliance on offshore teams.",
+                "ai-explanation-p4": "Now, Valenta brings that same power within reach of accounting firms of all sizes.",
+                "capabilities-title": "What Can a Digital Assistant Really Do?<br>More Than You Think",
+                "capabilities-did-you-know": "The average accountant in Australia/New Zealand will implement 20-30 automation processes at a fraction of the cost of human staff.",
+                "capabilities-did-you-know-strong": "Did you know?",
+                "capabilities-cta": "Book Your Free Consultation",
+                "flip-cards-title": "What Other Accountants Have Achieved with Valenta's Digital Assistants",
+                "flip-card-1-title": "A Digital Assistant Empowered a Rural Accountant",
+                "flip-card-1-item-1": "1 Digital Assistant manages 4 automated workflows.",
+                "flip-card-1-item-2": "The first flow covered the assistant's cost, replacing the work of 1.2 employees.",
+                "flip-card-1-item-3": "The next 3 flows replaced an additional 2.8 employees without extra cost.",
+                "flip-card-2-title": "National Firm Saves 7 Roles with a Single Assistant",
+                "flip-card-2-item-1": "1 Digital Assistant operating in more than 15 offices.",
+                "flip-card-2-item-2": "1 automated flow replaced the workload of 7 full-time employees.",
+                "flip-card-2-item-3": "2 additional workflows are under development.",
+                "flip-card-3-title": "Sydney Firm Automates 9 Workflows and Replaces 4 Roles",
+                "flip-card-3-item-1": "1 Digital Assistant executing 9 automated workflows.",
+                "flip-card-3-item-2": "The first 2 flows more than covered the service fee.",
+                "flip-card-3-item-3": "The assistant has replaced the workload of 4 employees.",
+                "flip-card-4-title": "Melbourne Firm Automates 8 Workflows and Replaces 6 Roles",
+                "flip-card-4-item-1": "1 Digital Assistant with 8 workflows in Taxes, Admin & more.",
+                "flip-card-4-item-2": "Has replaced the workload of 6 employees to date.",
+                "flip-card-4-item-3": "More savings on the way with additional workflows under development.",
+                "case-studies-title": "Case Studies & Insights",
+                "case-study-1-title": "Valenta's Expert Support Allows an Accounting Firm to Scale...",
+                "case-study-1-description": "The founder of Evolve had recently transitioned from his previous role to establish his own accounting firm.",
+                "case-study-read-more": "READ CASE STUDY",
+                "case-study-2-title": "Efficient Bookkeeping with Intelligent Automation for CPA Firms",
+                "case-study-2-description": "The client is a CPA firm in Greenville, SC. They ensure clients pay the least amount of taxes legally...",
+                "case-study-3-title": "Accountable Inc. Scales Accounting Operations with Strategic Digitization",
+                "case-study-3-description": "Identification and Implementation of a CRM Platform (Zoho One Implementation).",
+                "why-choose-title": "Why Accounting Leaders Choose Valenta",
+                "why-choose-1-strong": "Delivered as a Service",
+                "why-choose-1-span": "No IT resources or upfront investment (CAPEX) needed.",
+                "why-choose-2-strong": "Tailor-Made",
+                "why-choose-2-span": "Adapted to your tools, processes, and priorities.",
+                "why-choose-3-strong": "Fast ROI",
+                "why-choose-3-span": "Go from discovery to live deployment in as little as 30 days.",
+                "why-choose-4-strong": "Seamless Transitions",
+                "why-choose-4-span": "Ensure a smooth transition with thorough testing phases.",
+                "why-choose-5-strong": "Industry Expertise",
+                "why-choose-5-span": "Valenta has delivered over 100 Digital Assistants to accountants in the last 24 months.",
+                "why-choose-1-strong-mobile": "Delivered as a Service",
+                "why-choose-1-span-mobile": "No IT resources or CAPEX needed.",
+                "why-choose-2-strong-mobile": "Tailor-Made",
+                "why-choose-2-span-mobile": "Adapted to your tools, processes, and priorities.",
+                "why-choose-3-strong-mobile": "Fast ROI",
+                "why-choose-3-span-mobile": "Implementation in as little as 30 days.",
+                "why-choose-4-strong-mobile": "Seamless Transitions",
+                "why-choose-4-span-mobile": "Smooth transition with thorough testing.",
+                "why-choose-5-strong-mobile": "Industry Expertise",
+                "why-choose-5-span-mobile": "Over 100 Digital Assistants delivered in 24 months.",
+                "integrations-title": "Seamlessly Integrates with Your Existing Systems",
+                "integrations-description": "No matter what systems you use, we customize Digital Assistants to work with your current workflow, so you don't have to learn another tool.",
+                "integrations-cta": "Book Your Free Consultation",
+                "process-title": "From Chaos to Clarity in Just 30 Days",
+                "process-step-1": "We evaluate your current workflows.",
+                "process-step-2": "We build and deploy custom Digital Assistants.",
+                "process-step-3": "You start seeing ROI in a matter of weeks.",
+                "final-cta-title": "Ready to Transform Your Accounting Operations?",
+                "final-cta-button": "Book Your Free Consultation",
+                "final-form-title": "Get a Digital Assistant for Your Team",
+                "final-form-subtitle-1": "Ready to add a custom Digital Assistant and see ROI in weeks?",
+                "final-form-subtitle-2": "With hundreds of Valenta Managing Partners worldwide, you can find someone local to guide you every step of the way.",
+                "final-form-subtitle-3": "Book your free consultation today.",
+                "final-form-description": "Fill out the form to connect with your nearest Valenta expert."
+            }
+        };
+
+        function updateContent(lang) {
+            const elementsToTranslate = document.querySelectorAll('[data-key]');
+
+            elementsToTranslate.forEach(element => {
+                const key = element.dataset.key;
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                } else {
+                    // No translation found for key in current language, keep existing content or default to Spanish
+                }
+            });
+            htmlTag.lang = lang; // Update the lang attribute of the html tag
         }
-    };
 
-    function updateContent(lang) {
-        document.querySelectorAll('[data-key]').forEach(element => {
-            const key = element.dataset.key;
-            if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
+        languageButton.addEventListener('click', () => {
+            languageDropdown.classList.toggle('hidden');
+        });
+
+        languageDropdown.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const lang = event.target.dataset.lang;
+                selectedLanguageSpan.textContent = lang.toUpperCase();
+                languageDropdown.classList.add('hidden');
+                updateContent(lang); // Call updateContent when language changes
+            });
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        window.addEventListener('click', (event) => {
+            if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+                languageDropdown.classList.add('hidden');
             }
         });
-        htmlTag.lang = lang; // Update the lang attribute of the html tag
-    }
 
-    languageButton.addEventListener('click', () => {
-        languageDropdown.classList.toggle('hidden');
+        // Determine initial language from html tag or default to 'en'
+        const initialLang = htmlTag.lang || 'en';
+        updateContent(initialLang);
+        selectedLanguageSpan.textContent = initialLang.toUpperCase();
     });
-
-    languageDropdown.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const lang = event.target.dataset.lang;
-            selectedLanguageSpan.textContent = lang.toUpperCase();
-            languageDropdown.classList.add('hidden');
-            updateContent(lang); // Call updateContent when language changes
-        });
-    });
-
-    // Close the dropdown if the user clicks outside of it
-    window.addEventListener('click', (event) => {
-        if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
-            languageDropdown.classList.add('hidden');
-        }
-    });
-
-    // Set English as default language on page load
-    updateContent('en');
-    selectedLanguageSpan.textContent = 'EN';
 </script>
 </html>
