@@ -81,6 +81,13 @@ module.exports = {
             '80%': { transform: 'scale(1.1) rotate(5deg)' },
             '100%': { transform: 'scale(1) rotate(0deg)' },
           },
+          'rotational-wave': {
+            '0%': { transform: 'rotate(0deg) translateY(0%)' },
+            '25%': { transform: 'rotate(90deg) translateY(-10%)' },
+            '50%': { transform: 'rotate(180deg) translateY(0%)' },
+            '75%': { transform: 'rotate(270deg) translateY(10%)' },
+            '100%': { transform: 'rotate(360deg) translateY(0%)' },
+          },
         },
         animation: {
           'blurred-fade-in': 'blurred-fade-in 1s ease-in-out forwards',
@@ -95,6 +102,7 @@ module.exports = {
           'heartbeat': 'heartbeat 1.5s ease-in-out infinite',
           'impulse-rotation-right': 'impulse-rotation-right 2s ease-in-out infinite',
           'impulse-rotation-left': 'impulse-rotation-left 2s ease-in-out infinite',
+          'rotational-wave': 'rotational-wave 4s linear infinite',
         },
       },
     },
