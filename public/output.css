@@ -1398,6 +1398,22 @@ video {
   animation: rotational-wave 4s linear infinite;
 }
 
+@keyframes blurred-fade-in {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.hover\:animate-blurred-fade-in:hover {
+  animation: blurred-fade-in 1s ease-in-out forwards;
+}
+
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
