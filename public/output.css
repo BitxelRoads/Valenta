@@ -554,6 +554,17 @@ video {
   display: none;
 }
 
+:root {
+  --color-valenta-content: #333333;
+  /* Light mode text color */
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  color: var(--color-valenta-content);
+}
+
 .visible {
   visibility: visible;
 }
@@ -703,28 +714,12 @@ video {
   height: 400px;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-auto {
   height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[450px\] {
-  height: 450px;
 }
 
 .max-h-full {
@@ -817,7 +812,7 @@ video {
 
 @keyframes blurred-fade-in {
   0% {
-    filter: blur(10px);
+    filter: blur(20px);
     opacity: 0;
   }
 
@@ -828,7 +823,23 @@ video {
 }
 
 .animate-blurred-fade-in {
-  animation: blurred-fade-in 1s ease-in-out forwards;
+  animation: blurred-fade-in 1.5s ease-out forwards;
+}
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out forwards;
 }
 
 @keyframes fade-in-left {
@@ -844,7 +855,7 @@ video {
 }
 
 .animate-fade-in-left {
-  animation: fade-in-left 0.6s ease-out forwards;
+  animation: fade-in-left 1s ease-out forwards;
 }
 
 @keyframes fade-in-right {
@@ -1038,10 +1049,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-valenta-content\/50 {
-  background-color: rgb(44 62 80 / 0.5);
-}
-
 .bg-valenta-gray-light {
   --tw-bg-opacity: 1;
   background-color: rgb(248 249 250 / var(--tw-bg-opacity, 1));
@@ -1049,12 +1056,12 @@ video {
 
 .bg-valenta-navy {
   --tw-bg-opacity: 1;
-  background-color: rgb(10 39 53 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 31 63 / var(--tw-bg-opacity, 1));
 }
 
 .bg-valenta-orange {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 84 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 102 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-valenta-teal {
@@ -1223,8 +1230,7 @@ video {
 }
 
 .text-valenta-content {
-  --tw-text-opacity: 1;
-  color: rgb(44 62 80 / var(--tw-text-opacity, 1));
+  color: var(--color-valenta-content);
 }
 
 .text-valenta-gray {
@@ -1372,35 +1378,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes rotational-wave {
-  0% {
-    transform: rotate(0deg) translateY(0%);
-  }
-
-  25% {
-    transform: rotate(90deg) translateY(-10%);
-  }
-
-  50% {
-    transform: rotate(180deg) translateY(0%);
-  }
-
-  75% {
-    transform: rotate(270deg) translateY(10%);
-  }
-
-  100% {
-    transform: rotate(360deg) translateY(0%);
-  }
-}
-
-.hover\:animate-rotational-wave:hover {
-  animation: rotational-wave 4s linear infinite;
-}
-
 @keyframes blurred-fade-in {
   0% {
-    filter: blur(10px);
+    filter: blur(20px);
     opacity: 0;
   }
 
@@ -1411,7 +1391,7 @@ video {
 }
 
 .hover\:animate-blurred-fade-in:hover {
-  animation: blurred-fade-in 1s ease-in-out forwards;
+  animation: blurred-fade-in 1.5s ease-out forwards;
 }
 
 .hover\:bg-black:hover {
@@ -1422,6 +1402,11 @@ video {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-valenta-orange-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 82 0 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:shadow-2xl:hover {

@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    :root {
+        --color-valenta-content: #333333; /* Light mode text color */
+    }
+
+    .dark {
+        --color-valenta-content: #e2e8f0; /* Dark mode text color */
+    }
+
+    body {
+        @apply bg-white text-valenta-content;
+    }
+
+    .dark body {
+        @apply bg-valenta-bg-dark text-valenta-content;
+    }
+}
+
 /* Custom styles for Flip Cards */
 .group:hover .group-hover\:rotate-y-180 {
     transform: rotateY(180deg);
