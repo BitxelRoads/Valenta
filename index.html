@@ -46,7 +46,7 @@
                 <div class="language-toggle relative">
                     <button id="language-button" class="px-6 py-2 bg-valenta-orange text-white font-medium rounded-full flex items-center gap-2 shadow-lg hover:bg-valenta-orange-dark transition-colors duration-200 animate-blurred-fade-in">
                         <span id="selected-language" class="text-lg">EN</span>
-                        <svg xmlns="http://www.w.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
@@ -109,7 +109,7 @@
                         
                         <div class="relative flex items-start gap-6 mb-12">
                             <div class="flex-shrink-0 w-16 h-16 rounded-full bg-valenta-teal flex items-center justify-center z-10">
-                                <img src="https://valenta.io/wp-content/uploads/2025/07/Section-3-Icon-1.webp" alt="Staff retention icon" class="w-9 h-9">
+                                <img src="https://valenta.io/wp-content/uploads/2025/07/Section-3-Icon.webp" alt="Staff retention icon" class="w-9 h-9">
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-valenta-content mb-2" data-key="challenge-1-title">Attracting & Retaining Staff</h3>
@@ -678,16 +678,6 @@
             });
             htmlTag.lang = lang; 
 
-            // Update images based on language
-            document.querySelectorAll('img[data-en-src]').forEach(img => {
-                if (lang === 'es') {
-                    img.src = img.dataset.esSrc;
-                } else {
-                    img.src = img.dataset.enSrc;
-                }
-            });
-
-            // Specifically handle the mobile image on line 172 if it exists
             const mobileImage = document.querySelector('.block.lg\\:hidden img[data-en-src]');
             if (mobileImage) {
                 if (lang === 'es') {
@@ -723,5 +713,4 @@
     });
 </script>
 <script src="src/process-animation.js"></script>
-</body>
 </html>

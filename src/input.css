@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles for Flip Cards */
 .group:hover .group-hover\:rotate-y-180 {
     transform: rotateY(180deg);
 }
@@ -37,20 +36,18 @@
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 0 auto; /* Center the ul horizontally */
+    margin: 0 auto;
 }
 
 .flip-card-back ul li {
-    text-align: center; /* Center list item text */
+    text-align: center;
 }
 
-/* Custom Radial Mask for images */
 .mask-radial-at-center {
     mask-image: radial-gradient(circle at center, black 4%, transparent 80%);
     -webkit-mask-image: radial-gradient(circle at center, black 4%, transparent 80%);
 }
 
-/* Animations */
 .hidden-bottom {
     opacity: 0;
     transform: translateY(50px);
