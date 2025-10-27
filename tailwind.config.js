@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{html,js}"
@@ -18,7 +17,7 @@ module.exports = {
             light: '#f8f9fa',
             DEFAULT: '#5a6c7d',
         },
-        'valenta-content': 'var(--color-valenta-content)', // Use CSS variable for dynamic content color
+        'valenta-content': '#333333', // Default text color for light mode
         'valenta-bg-light': '#FFFFFF', // Light mode background
         'valenta-bg-dark': '#1a202c', // Dark mode background
         'valenta-text-light': '#333333', // Light mode text

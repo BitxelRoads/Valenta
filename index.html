@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valenta Accounting Landing Page</title>
+    <meta name="robots" content="index, follow">
     <meta name="description" content="Valenta's AI-Powered Digital Assistants help accounting leaders do more with less, tackling repetitive tasks and maximizing team value. Book a free consultation today!">
     <meta name="keywords" content="AI, Digital Assistants, Accountants, Accounting Automation, Valenta, Financial Automation, CPA, Bookkeeping, Intelligent Automation">
     <link rel="canonical" href="https://valenta.io/lp-accounting/">
@@ -33,16 +34,26 @@
     <header class="py-5">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <img src="https://valenta.io/wp-content/uploads/2025/04/newLogo.png" alt="Valenta Logo" class="w-48 md:w-64 h-auto animate-blurred-fade-in">
-            <div class="language-toggle relative">
-                <button id="language-button" class="px-6 py-2 bg-valenta-orange text-white font-medium rounded-full flex items-center gap-2 shadow-lg hover:bg-valenta-orange-dark transition-colors duration-200 animate-blurred-fade-in">
-                    <span id="selected-language" class="text-lg">EN</span>
-                    <svg xmlns="http://www.w.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            <div class="flex items-center space-x-4"> 
+                <button id="theme-toggle" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white font-medium rounded-full flex items-center justify-center shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200 animate-blurred-fade-in">
+                    <svg id="theme-toggle-light-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M4 12H3m15.364 6.364l-.707.707M6.343 6.343l-.707-.707m12.728 0l-.707-.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <svg id="theme-toggle-dark-icon" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                 </button>
-                <div id="language-dropdown" class="absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden hidden z-20 animate-fade-in-down">
-                    <button class="block w-full text-left px-5 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-150" data-lang="en">English</button>
-                    <button class="block w-full text-left px-5 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-150" data-lang="es">Español</button>
+                <div class="language-toggle relative">
+                    <button id="language-button" class="px-6 py-2 bg-valenta-orange text-white font-medium rounded-full flex items-center gap-2 shadow-lg hover:bg-valenta-orange-dark transition-colors duration-200 animate-blurred-fade-in">
+                        <span id="selected-language" class="text-lg">EN</span>
+                        <svg xmlns="http://www.w.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="language-dropdown" class="absolute right-0 mt-2 w-36 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden hidden z-20 animate-fade-in-down">
+                        <button class="block w-full text-left px-5 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-150" data-lang="en">English</button>
+                        <button class="block w-full text-left px-5 py-2 text-gray-700 hover:bg-gray-100 transition-colors duration-150" data-lang="es">Español</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,8 +200,8 @@
                                     <img src="https://valenta.io/wp-content/uploads/2025/08/1.-Accounting-Page-Flip-Image.png" alt="Accounting team" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl">
                                 </div>
                             </div>
-                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
-                                <ul class="list-disc list-inside space-y-3 text-left text-base md:text-lg">
+                            <div class="absolute backface-hidden w-full h-full bg-valenta-teal text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center flip-card-back">
+                                <ul class="list-disc list-inside space-y-3 text-base md:text-lg">
                                     <li data-key="flip-card-1-item-1">1 Digital Assistant manages 4 automated workflows.</li>
                                     <li data-key="flip-card-1-item-2">First workflow covered assistant's cost, replacing 1.2 employees' work.</li>
                                     <li data-key="flip-card-1-item-3">Next 3 workflows replaced 2.8 additional employees at no extra cost.</li>
@@ -205,8 +216,8 @@
                                 <h3 class="text-xl font-bold mb-4" data-key="flip-card-2-title">National Firm Saves 7 Roles with One Assistant</h3>
                                 <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/2.-Accounting-Page-Flip-Image.png" alt="Modern office" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
-                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
-                                <ul class="list-disc list-inside space-y-3 text-left text-base md:text-lg">
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-dark text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center flip-card-back">
+                                <ul class="list-disc list-inside space-y-3 text-base md:text-lg">
                                     <li data-key="flip-card-2-item-1">1 Digital Assistant operating across 15+ offices.</li>
                                     <li data-key="flip-card-2-item-2">1 automated workflow replaced the workload of 7 full-time employees.</li>
                                     <li data-key="flip-card-2-item-3">2 additional workflows are in development.</li>
@@ -221,8 +232,8 @@
                                 <h3 class="text-xl font-bold mb-4" data-key="flip-card-3-title">Sydney Firm Automates 9 Workflows & Replaces 4 Roles</h3>
                                 <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/3.-Accounting-Page-Flip-Image.png" alt="Sydney skyline" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
-                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
-                                <ul class="list-disc list-inside space-y-3 text-left text-base md:text-lg">
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-teal-darker text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center flip-card-back">
+                                <ul class="list-disc list-inside space-y-3 text-base md:text-lg">
                                     <li data-key="flip-card-3-item-1">1 Digital Assistant executing 9 automated workflows.</li>
                                     <li data-key="flip-card-3-item-2">First 2 workflows more than covered service fee.</li>
                                     <li data-key="flip-card-3-item-3">Assistant has replaced the workload of 4 employees.</li>
@@ -237,8 +248,8 @@
                                 <h3 class="text-xl font-bold mb-4" data-key="flip-card-4-title">Melbourne Firm Automates 8 Workflows and Replaces 6 Roles</h3>
                                 <div class="flex-grow flex items-center justify-center"><img src="https://valenta.io/wp-content/uploads/2025/08/4.-Accounting-Page-Flip-Image.png" alt="Melbourne skyline" class="w-full h-auto object-cover max-h-full max-w-[500px] rounded-xl"></div>
                             </div>
-                             <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center">
-                                <ul class="list-disc list-inside space-y-3 text-left text-base md:text-lg">
+                             <div class="absolute backface-hidden w-full h-full bg-valenta-navy text-white rounded-2xl shadow-xl p-6 rotate-y-180 flex flex-col justify-center items-center text-center flip-card-back">
+                                <ul class="list-disc list-inside space-y-3 text-base md:text-lg">
                                     <li data-key="flip-card-4-item-1">1 Digital Assistant with 8 workflows in Taxes, Admin & more.</li>
                                     <li data-key="flip-card-4-item-2">Has replaced the workload of 6 employees to date.</li>
                                     <li data-key="flip-card-4-item-3">More savings on the way with additional workflows under development.</li>
@@ -516,11 +527,11 @@
                 "flip-card-2-item-2": "1 flujo automatizado reemplazó la carga de 7 empleados a tiempo completo.",
                 "flip-card-2-item-3": "Se están desarrollando 2 flujos de trabajo adicionales.",
                 "flip-card-3-title": "Firma de Sídney Automatiza 9 Flujos y Reemplaza 4 Roles",
-                "flip-card-3-item-1": "1 Asistente Digital ejecutando 9 flujos de trabajo automatizados.",
+                "flip-card-3-item-1": "1 Digital Assistant ejecutando 9 flujos de trabajo automatizados.",
                 "flip-card-3-item-2": "Los primeros 2 flujos cubrieron con creces la tarifa del servicio.",
                 "flip-card-3-item-3": "El asistente ha reemplazado la carga de trabajo de 4 empleados.",
-                "flip-card-4-title": "Firma de Melbourne Automatiza 8 Flujos y Reemplaza 6 Roles",
-                "flip-card-4-item-1": "1 Asistente Digital con 8 flujos en Impuestos, Admin y más.",
+                "flip-card-4-title": "Melbourne Firm Automatiza 8 Flujos y Reemplaza 6 Roles",
+                "flip-card-4-item-1": "1 Digital Assistant con 8 flujos en Impuestos, Admin y más.",
                 "flip-card-4-item-2": "Ha reemplazado la carga de trabajo de 6 empleados hasta la fecha.",
                 "flip-card-4-item-3": "Más ahorros en camino con flujos adicionales en desarrollo.",
                 "case-studies-title": "Casos de Estudio e Insights",
@@ -693,4 +704,5 @@
     });
 </script>
 <script src="src/process-animation.js"></script>
+</body>
 </html>
