@@ -166,10 +166,10 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-black mb-8 leading-tight" data-key="capabilities-title">What Can a Digital Assistant Actually Do?<br>More Than You Think</h2>
                 
                 <div class="hidden lg:block">
-                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-4-Updated.png" alt="Digital Assistant Capabilities" class="mx-auto">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Section-4-Updated.png" data-en-src="https://valenta.io/wp-content/uploads/2025/07/Section-4-Updated.png" data-es-src="public/assets/whatcanido.png" alt="Digital Assistant Capabilities" class="mx-auto">
                 </div>
                 <div class="block lg:hidden">
-                    <img src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-4-Mobile.png" alt="Digital Assistant Capabilities on mobile" class="mx-auto">
+                    <img src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-4-Mobile.png" data-en-src="https://valenta.io/wp-content/uploads/2025/07/Accounting-Section-4-Mobile.png" data-es-src="public/assets/whatcanido - vertical.png" alt="Digital Assistant Capabilities on mobile" class="mx-auto">
                 </div>
                 
                 <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 max-w-3xl mx-auto text-left">
@@ -677,6 +677,25 @@
                 }
             });
             htmlTag.lang = lang; 
+
+            // Update images based on language
+            document.querySelectorAll('img[data-en-src]').forEach(img => {
+                if (lang === 'es') {
+                    img.src = img.dataset.esSrc;
+                } else {
+                    img.src = img.dataset.enSrc;
+                }
+            });
+
+            // Specifically handle the mobile image on line 172 if it exists
+            const mobileImage = document.querySelector('.block.lg\\:hidden img[data-en-src]');
+            if (mobileImage) {
+                if (lang === 'es') {
+                    mobileImage.src = mobileImage.dataset.esSrc;
+                } else {
+                    mobileImage.src = mobileImage.dataset.enSrc;
+                }
+            }
         }
 
         languageButton.addEventListener('click', () => {

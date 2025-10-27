@@ -17,17 +17,17 @@ module.exports = {
             light: '#f8f9fa',
             DEFAULT: '#5a6c7d',
         },
-        'valenta-content': '#333333', // Default text color for light mode
-        'valenta-bg-light': '#FFFFFF', // Light mode background
-        'valenta-bg-dark': '#1a202c', // Dark mode background
-        'valenta-text-light': '#333333', // Light mode text
-        'valenta-text-dark': '#e2e8f0', // Dark mode text
+        'valenta-content': '#333333', 
+        'valenta-bg-light': '#FFFFFF', 
+        'valenta-bg-dark': '#1a202c', 
+        'valenta-text-light': '#333333', 
+        'valenta-text-dark': '#e2e8f0', 
       },
       fontFamily: {
           sans: ['DM Sans', 'sans-serif'],
       },
       fontSize: {
-        'base-mobile': '0.85rem', // 13.6px based on 16px default
+        'base-mobile': '0.85rem', 
       },
       keyframes: {
         'blurred-fade-in': {
