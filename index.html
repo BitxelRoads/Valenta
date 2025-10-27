@@ -678,14 +678,13 @@
             });
             htmlTag.lang = lang; 
 
-            const mobileImage = document.querySelector('.block.lg\\:hidden img[data-en-src]');
-            if (mobileImage) {
+            document.querySelectorAll('img[data-en-src]').forEach(img => {
                 if (lang === 'es') {
-                    mobileImage.src = mobileImage.dataset.esSrc;
+                    img.src = img.dataset.esSrc;
                 } else {
-                    mobileImage.src = mobileImage.dataset.enSrc;
+                    img.src = img.dataset.enSrc;
                 }
-            }
+            });
         }
 
         languageButton.addEventListener('click', () => {
